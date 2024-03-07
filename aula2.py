@@ -40,13 +40,13 @@
 # Entrada de dados
 # Pra entrada de dados é necessário que declaremos a váriavel
 
-media_final = float(input(" Média final da diciplina de 0 à 10"))
-frequencia = int(input("Frequência da diciplina em porcentagem"))
+# media_final = float(input(" Média final da diciplina de 0 à 10"))
+# frequencia = int(input("Frequência da diciplina em porcentagem"))
 
-if media_final >= 6 and frequencia >= 75:
-    print("Aprovado!")
-else:
-    print("Reprovado!")
+# if media_final >= 6 and frequencia >= 75:
+#     print("Aprovado!")
+# else:
+#     print("Reprovado!")
 
 
 
