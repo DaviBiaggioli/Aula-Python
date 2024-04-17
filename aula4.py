@@ -77,3 +77,76 @@ from BIBLIOTECA import FUNÇÃO'''
 #     print(n, " X ", x, " = ", n*x)
 #     x+=1
 
+# EXEMPLO:
+
+    # Vejamos um programa para corrigir um teste de múltipla
+    # escolha com três questões. A resposta da 1ª é “b”, da 2ª é “a”
+    # e da 3ª é “d”. O programa conta com 1 ponto a cada resposta
+    # correta.
+
+# print("Esse programa é um gabarito de uma prova.\n")
+# pontos = 0
+# questao = 1
+# while questao <= 3:
+#     resposta = input(f"Me fale a resposta da questão {questao}: ")
+#     if questao == 1 and resposta == "b":
+#         pontos = pontos + 1
+#     elif questao == 2 and resposta == "a":
+#         pontos = pontos + 1
+#     elif questao == 3 and resposta == "d":
+#         pontos = pontos + 1
+#     questao = questao + 1
+# print(f"O aluno fez {pontos} ponto(s).")
+
+# EXEMPLO ACUMULADOR
+
+    # Em programas para calcular o total de uma soma, por
+    # exemplo, precisamos de acumuladores. A diferença entre um
+    # contador e um acumulador é que nos contadores o valor
+    # adicionado é constante e nos acumuladores, variável.
+    # Vejamos um programa que calcule a soma de 10 números.
+
+# print("Esse programa exemplifica o uso do acumulador através de uma soma.\n")
+# cont = 0
+# acumulador = 0
+# while cont < 10:
+#     cont+=1
+#     x = float(input(f"Digite o {cont}º número a ser somado: "))
+#     acumulador += x
+# print(f"A soma é igua a {acumulador:.2f}")
+# print(f"A media é igua a {acumulador/cont:.2f}")
+
+# EXERCICIO 8
+
+    # 8. Escreva um programa que pergunte o depósito inicial
+    # e a taxa de juros de uma poupança. Exiba os valores
+    # mês a mês para os 24 primeiros meses. Escreva o total
+    # do ganho com juros no período.
+
+# print("Esse programa calcula o valor de juros de um depósito mês a mês durante 24 meses.\n")
+# deposito = float(input("Digite deposito inicial: "))
+# juros = int(input("Digite a taxa de juros  a ser acrecida em cada mês: \n"))
+# mes = 0
+# while mes < 24:
+#     mes += 1
+#     print(f"No {mes}º mês o valor total contando com a taxa será de {deposito:.2f}")
+#     deposito = deposito + deposito * (juros/100)
+# print(f"\nO valor total ao final do investimento de {deposito:.2f}.")
+
+# EXERCICIO 9
+
+    # Altere o programa anterior de forma a perguntar
+    # também o valor depositado mensalmente. Esse valor
+    # será depositado no início de cada mês e você deve
+    # considerá-lo para o cálculo de juros do mês seguinte.
+
+# print("Esse programa calcula o valor de juros de um depósito mês a mês durante 24 meses. Voce poderá depositar mensalmente também.\n")
+# deposito = float(input("Digite deposito inicial: "))
+# juros = int(input("Digite a taxa de juros  a ser acrecida em cada mês: \n"))
+# mes = 0
+# while mes < 24:
+#     mes += 1
+#     print(f"No {mes}º mês o valor total contando com a taxa será de {deposito:.2f}")
+#     dmensal = float(input(f"Digite o seu deposito no {mes}º mês."))
+#     deposito = dmensal + deposito + deposito * (juros/100)
+# print(f"\nO valor total ao final do investimento de {deposito:.2f}.")
